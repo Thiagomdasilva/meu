@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personagens de Rick and Morty</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Seja Bem-Vindo</h1>
+    <h2>Personagens de Rick and Morty</h2>
+    <input type="text" id="filterInput" placeholder="Filtrar personagens por nome..." />
+    <div id="characterList" class="card-grid"></div>
+
+    <h2>Favoritos</h2>
+    <p>Veja abaixo os personagens que você adicionou aos seus favoritos. Você pode clicar em "Remover" para tirar um personagem da lista.</p>
+    <div id="favoritesList" class="card-grid"></div>
+    <button id="clearFavorites">Limpar Favoritos</button>
+  </div>
+
+  <div id="characterDetails" class="details">
+    <h2>Detalhes do Personagem</h2>
+    <p id="characterName"></p>
+    <p id="characterSpecies"></p>
+    <p id="characterStatus"></p>
+    <p id="characterOrigin"></p>
+    <img id="characterImage" alt="Imagem do personagem" />
+    <button id="closeDetails">Fechar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

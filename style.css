@@ -1,0 +1,149 @@
+/* Estilo do corpo */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('/mnt/data/5164749.webp') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+input {
+  padding: 15px;
+  width: 80%;
+  margin: 0 auto 20px auto;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  display: block;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #000;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.favorite-btn, .details-btn {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.favorite-btn {
+  background-color: #2ecc71;
+}
+
+.favorite-btn:hover {
+  background-color: #27ae60;
+}
+
+.details-btn {
+  background-color: #3498db;
+}
+
+.details-btn:hover {
+  background-color: #2980b9;
+}
+
+.details {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #000;
+}
+
+.details.active {
+  display: block;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#clearFavorites {
+  background-color: #e74c3c; /* Cor do botão de limpar */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; /* Centraliza o botão */
+  margin: 20px auto; /* Espaçamento */
+}
+
+#clearFavorites:hover {
+  background-color: #c0392b; /* Cor ao passar o mouse */
+}
+
+/* Para centralizar o título "Bem-vindo" */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Estilos para os favoritos em círculos */
+.favorite-character {
+  display: inline-block; /* Permite que os itens fiquem lado a lado */
+  margin: 5px;
+  width: 50px; /* Tamanho do círculo */
+  height: 50px; /* Tamanho do círculo */
+  border-radius: 50%; /* Faz o elemento ser um círculo */
+  overflow: hidden; /* Oculta qualquer parte da imagem que ultrapasse o círculo */
+  border: 2px solid #fff; /* Borda branca para o círculo */
+}
+
+.favorite-character img {
+  width: 100%; /* A imagem ocupa 100% do círculo */
+  height: auto; /* Mantém a proporção da imagem */
+}
